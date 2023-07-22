@@ -12,6 +12,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import model.InteresCalcular;
 
 /**
  *
@@ -72,8 +73,17 @@ public class Calculo extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
-        processRequest(request, response);
+        
+        double capital = Double.parseDouble(request.getParameter("capital"));
+        double interesTasa = Double.parseDouble(request.getParameter("interesTasa"));
+        int anos = Integer.parseInt(request.getParameter("anos")); 
+        
+       double interes = InteresCalcular.calculoInteres(capital, interesTasa, anos);
+       
+       request.setAttribute("interes", interes);
+        request.getRequestDispatcher("respuesta.jsp").forward(request, response);
     }
+    
 
     /**
      * Returns a short description of the servlet.

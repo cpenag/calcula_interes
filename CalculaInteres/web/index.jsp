@@ -33,9 +33,9 @@
             <label>Capital:</label> 
             <input type="number" step="0.01" name="capital"><br><br>
         <label>Tasa de Interés Anual (%):</label>  
-        <input type="number" step="0.01" name="interestRate"><br><br>
+        <input type="number" step="0.01" name="interesTasa"><br><br>
        <label> Número de Años:</label> 
-       <input type="number" name="years"><br><br>
+       <input type="number" name="anos"><br><br>
         <input type="submit" value="Calcular" class="btn btn-dark">
     </form>
        </div> </div>
