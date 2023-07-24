@@ -15,28 +15,26 @@
     
     <body class="bg-primary ">
         
-        
-       
        <div class="container border bg-light"> 
             <div class="row"> 
                 <div class="col-12 p-5 text-center">               
             <h1 class="bg-primary text-light">CALCULAR INTERÉS SIMPLE</h1>
                 </div>
                   <div class="row">  <div class="col-12 border p-4  text-center"> 
-                            <p class="h3">Debe ingresar todos los datos solicitados para obtener su resultado: </p>
-                    </div>
-                   </div> 
+                     <p class="h3">Debe ingresar todos los datos solicitados para obtener su resultado: </p>
+                  </div>
+                </div> 
        <div class="row">  <div class="col-2"> </div> 
       
         <div class="col-8 border bg-light text-primary">           
-        <form action="Calculo" method="POST">
+    <form action="Calculo" method="POST">
             <label>Capital:</label> 
-            <input type="number" step="0.01" name="capital"><br><br>
-        <label>Tasa de Interés Anual (%):</label>  
-        <input type="number" step="0.01" name="interesTasa"><br><br>
-       <label> Número de Años:</label> 
-       <input type="number" name="anos"><br><br>
-        <input type="submit" value="Calcular" class="btn btn-dark">
+              <input type="number" step="0.01" name="capital"><br><br>
+               <label>Tasa de Interés Anual (%):</label>  
+               <input type="number" step="0.01" name="interesTasa"><br><br>
+              <label> Número de Años:</label> 
+            <input type="number" name="anos"><br><br>
+          <input type="submit" value="Calcular" class="btn btn-dark">
     </form>
        </div> </div>
    

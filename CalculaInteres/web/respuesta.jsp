@@ -14,6 +14,6 @@
     
     <body>
          <h1>Resultado - Calculadora de Interés Simple</h1>
-    <p>El interés simple producido es: $<%= request.getAttribute("interes") %></p>
+    <p>El interés simple generado es: $<%= request.getAttribute("interes") %></p>
     </body>
 </html>
