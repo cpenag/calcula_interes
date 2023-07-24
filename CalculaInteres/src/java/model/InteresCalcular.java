@@ -12,5 +12,7 @@ package model;
 public class InteresCalcular {
    public static double calculoInteres(double capital, double interesTasa, int anos) {
         return capital * (interesTasa / 100) * anos;
+        
+        
     }  
 }

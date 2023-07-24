@@ -83,8 +83,6 @@ public class Calculo extends HttpServlet {
        request.setAttribute("interes", interes);
         request.getRequestDispatcher("respuesta.jsp").forward(request, response);
     }
-    
-
     /**
      * Returns a short description of the servlet.
      *
